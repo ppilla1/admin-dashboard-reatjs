@@ -19,7 +19,7 @@ const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="top">
-                <span className="logo">SynOpz</span>
+                <span className="logo">SynExMS</span>
             </div>
             <hr/>
             <div className="center">
