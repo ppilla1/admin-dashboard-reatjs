@@ -1,13 +1,19 @@
+import { SimCardDownloadOutlined } from "@mui/icons-material"
 import React from "react"
 import "./List.scss"
+import SideBar from "../../components/sidebar/Sidebar"
+import NavBar from "../../components/navbar/Navbar"
+import DataTable from "../../components/datatable/DataTable"
 
 const List = () => {
 
     return (
         <div className="list">
-            <h1 className="title">
-                List
-            </h1>
+            <SideBar/>
+            <div className="listContainer">
+                <NavBar/>
+                <DataTable/>
+            </div>
         </div>
     )
 }
