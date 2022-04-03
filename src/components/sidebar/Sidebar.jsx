@@ -12,6 +12,8 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping'
 import StoreIcon from '@mui/icons-material/Store'
 import CreditCardIcon from '@mui/icons-material/CreditCard'
 
+import {Link} from "react-router-dom"
+
 import "./Sidebar.scss"
 
 const Sidebar = () => {
@@ -19,7 +21,9 @@ const Sidebar = () => {
     return(
         <div className="sidebar">
             <div className="top">
-                <span className="logo">SynExMS</span>
+                <Link to="/" style={{textDecoration: "none"}}>
+                    <span className="logo">SynExMS</span>
+                </Link>
             </div>
             <hr/>
             <div className="center">
@@ -27,16 +31,22 @@ const Sidebar = () => {
                     <p className="title">MAIN</p>
                     <li>
                         <DashboardIcon className="icon"/>
-                        <span>Dashboard</span>
+                        <Link to="/" style={{textDecoration: "none"}}>
+                            <span>Dashboard</span>
+                        </Link>
                     </li>
                     <p className="title">LISTS</p>
                     <li>
                         <PersonOutlineOutlinedIcon className="icon"/>
-                        <span>Users</span>
+                        <Link to="/users" style={{textDecoration: "none"}}>
+                            <span>Users</span>
+                        </Link>
                     </li>
                     <li>
                         <StoreIcon className="icon"/>
-                        <span>Products</span>
+                        <Link to="/products" style={{textDecoration: "none"}}>
+                            <span>Products</span>
+                        </Link>
                     </li>
                     <li>
                         <CreditCardIcon className="icon"/>
